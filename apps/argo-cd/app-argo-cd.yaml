@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-cd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/aiyi91/apps-k8s.git
+    targetRevision: HEAD
+    path: apps/argo-cd
+  destination:
+    server: https://kubernetes.default.svc
