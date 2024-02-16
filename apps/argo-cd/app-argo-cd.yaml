@@ -7,6 +7,11 @@ spec:
   source:
     repoURL: https://github.com/aiyi91/apps-k8s.git
     targetRevision: HEAD
-    path: apps/argo-cd
+    path: apps/argo-cd #path is the directory in argocd look like: apps-k8s/apps/argo-cd
   destination:
     server: https://kubernetes.default.svc
+  syncPolicy:
+    syncOptions:
+      - Validate=true
+      - CreateNamespace=true
+      
