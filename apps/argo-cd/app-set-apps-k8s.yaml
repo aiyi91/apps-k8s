@@ -16,7 +16,7 @@ spec:
     metadata:
       name: '{{.path.basename}}'
     spec:
-      project: "apps-k8s"
+      project: default
       source:
         repoURL: https://github.com/aiyi91/apps-k8s.git
         targetRevision: HEAD
