@@ -1,5 +1,8 @@
 namespace: argo-cd
 
+resources:
+  - app-argo-cd.yaml
+
 helmCharts:
   - name: argo-cd
     releaseName: argo-cd
