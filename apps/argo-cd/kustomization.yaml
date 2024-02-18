@@ -1,7 +1,6 @@
 namespace: argo-cd
 
 resources:
-  - app-argo-cd.yaml
   - app-set-apps-k8s.yaml
 
 helmCharts:
