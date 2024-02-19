@@ -1,0 +1,18 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: cnpg-app
+spec:
+  instances: 1
+  imageName: ghcr.io/cloudnative-pg/posgtresql:15.1
+  boostrap:
+    initdb:
+      database: airflow
+      owner: airflow
+  storage:
+    size: 1Gi
+  resources:
+    limits:
+      memory: 1Gi
+    requests:
+      memory: 256Mi
