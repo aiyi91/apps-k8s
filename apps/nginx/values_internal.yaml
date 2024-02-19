@@ -8,6 +8,8 @@ controller:
   ingressClassByName: true
   electionID: ingress-internal-leader
   
+tcp:
+  50000: cnpg/pg-app-rw:5432 #namespace/service
 
     
       
