@@ -1,0 +1,8 @@
+namespace: cnpg
+
+helmCharts:
+  - name: cnpg
+    releaseName: cnpg
+    namespace: cnpg
+    repo: https://cloudnative-pg.github.io/charts
+    version: 1.18.0
